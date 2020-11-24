@@ -1,0 +1,14 @@
+.paginationWrapper {
+    padding-top: 10px;
+    text-align: center;
+    display: block !important;
+}
+
+.pagination {
+    padding: 7px;
+    margin: 5px;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,13 +1,14 @@
 // Core
-import React, { Component } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 // Instruments
 import Styles from './styles.m.css';
 
-export default class Spinner extends Component {
-    render () {
-        const { isSpinning } = this.props;
+const Spinner = () => {
+    const isFetching = useSelector((state) => state.ui.get('isFetching'));
 
-        return isSpinning ? <div className = { Styles.spinner } /> : null;
-    }
-}
+    return isFetching ? <div className = { Styles.spinner } /> : null;
+};
+
+export default Spinner;

@@ -109,23 +109,30 @@
 
                 &::-webkit-scrollbar {
                     display: none;
-                }
-            }
+                }                
+            }           
         }
 
         & footer {
-            display: flex;
-            justify-content: flex-start;
             align-items: center;
 
             & div {
                 margin: 0 20px;
                 cursor: pointer;
+
+                &:nth-child(1) {
+                    display: contents !important;
+
+                    & svg {
+                        display: inline !important;
+                    }
+                }
             }
 
-            & .completeAllTasks {
+            & .completeAllTasks {                
                 font-size: 20px;
                 color: var(--paletteColor7);
+                margin-left: 20px;
             }
         }
     }
@@ -190,4 +197,26 @@
             }
         }
     }
+}
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 800ms ease-in;
+}
+
+.fadeenterdone {
+    display: none;
 }

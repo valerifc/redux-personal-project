@@ -1,0 +1,32 @@
+=== Docs
+
+https://github.com/valerifc/redux-personal-project
+https://lab.lectrum.io/docs/hw/todo/#/docs/summary
+https://lab.lectrum.io/faq#how-to-make-pretiier-and-eslint-work-together
+
+
+=== ESLINT setting
+1) CTRL + ,
+2) Печатаем "formatter"
+3) Editor: Default Formatter выбираем eslint ("dbaeumer.vscode-eslint")
+4) Печатаем "format"
+5) Тыкаем "Edit in settings.json"
+6) Задаем конфиг:
+{
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript"
+  ],
+  "eslint.alwaysShowStatus": true,
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
+  "git.ignoreWindowsGit27Warning": true,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "html.format.contentUnformatted": "",
+  "editor.formatOnSave": true
+}
