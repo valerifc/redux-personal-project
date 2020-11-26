@@ -2,9 +2,6 @@
 import { MAIN_URL, TOKEN } from "./config";
 
 export const api = {
-    get token () {
-        return localStorage.getItem("token");
-    },
     todos: {
         fetch (page, size, search) {
             return fetch(`${MAIN_URL}?page=${page}&size=${size}&search=${search}`, {

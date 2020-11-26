@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`todos actions: createTodo 1`] = `
+Object {
+  "payload": Object {
+    "completed": false,
+    "created": "2018-02-10T15:44:32.959Z",
+    "favorite": false,
+    "id": "5a7f136031a5d90001271635",
+    "message": "Hello",
+  },
+  "type": "CREATE_TODO",
+}
+`;
+
+exports[`todos actions: createTodoAsync 1`] = `
+Object {
+  "payload": "TEST_MESSAGE",
+  "type": "CREATE_TODO_ASYNC",
+}
+`;
+
+exports[`todos actions: fetchTodos 1`] = `
+Object {
+  "payload": Array [
+    Object {
+      "completed": true,
+      "created": "2018-02-10T15:44:34.624Z",
+      "favorite": false,
+      "id": "5a7f136231a5d90001271637",
+      "message": "Hello Andrey!",
+      "modified": "2018-02-10T16:01:12.406Z",
+    },
+    Object {
+      "completed": false,
+      "created": "2018-02-10T15:44:33.675Z",
+      "favorite": false,
+      "id": "5a7f136131a5d90001271636",
+      "message": "Hello",
+    },
+    Object {
+      "completed": false,
+      "created": "2018-02-10T15:44:32.959Z",
+      "favorite": false,
+      "id": "5a7f136031a5d90001271635",
+      "message": "Hello",
+    },
+  ],
+  "type": "FETCH_TODOS",
+}
+`;
+
+exports[`todos actions: fetchTodosAsync 1`] = `
+Object {
+  "payload": Object {
+    "page": 2,
+    "search": "test_search",
+    "size": 10,
+  },
+  "type": "FETCH_TODOS_ASYNC",
+}
+`;
+
+exports[`todos actions: removeTodo 1`] = `
+Object {
+  "payload": "5a7f136231a5d90001271637",
+  "type": "REMOVE_TODO",
+}
+`;
+
+exports[`todos actions: removeTodoAsync 1`] = `
+Object {
+  "payload": "5a7f136231a5d90001271637",
+  "type": "REMOVE_TODO_ASYNC",
+}
+`;
+
+exports[`todos actions: updateAllTodos 1`] = `
+Object {
+  "payload": Object {
+    "completed": false,
+    "created": "2018-02-10T15:44:32.959Z",
+    "favorite": false,
+    "id": "5a7f136031a5d90001271635",
+    "message": "Hello",
+  },
+  "type": "UPDATE_ALL_TODOS",
+}
+`;
+
+exports[`todos actions: updateTodo 1`] = `
+Object {
+  "payload": Object {
+    "completed": false,
+    "created": "2018-02-10T15:44:32.959Z",
+    "favorite": false,
+    "id": "5a7f136031a5d90001271635",
+    "message": "Hello",
+  },
+  "type": "UPDATE_TODO",
+}
+`;
+
+exports[`todos actions: updateTodoAsync 1`] = `
+Object {
+  "payload": Object {
+    "completed": false,
+    "created": "2018-02-10T15:44:32.959Z",
+    "favorite": false,
+    "id": "5a7f136031a5d90001271635",
+    "message": "Hello",
+  },
+  "type": "UPDATE_TODO_ASYNC",
+}
+`;
+
+exports[`todos actions: updateTodos 1`] = `
+Object {
+  "payload": Array [
+    Object {
+      "completed": true,
+      "created": "2018-02-10T15:44:34.624Z",
+      "favorite": false,
+      "id": "5a7f136231a5d90001271637",
+      "message": "Hello Andrey!",
+      "modified": "2018-02-10T16:01:12.406Z",
+    },
+    Object {
+      "completed": false,
+      "created": "2018-02-10T15:44:33.675Z",
+      "favorite": false,
+      "id": "5a7f136131a5d90001271636",
+      "message": "Hello",
+    },
+    Object {
+      "completed": false,
+      "created": "2018-02-10T15:44:32.959Z",
+      "favorite": false,
+      "id": "5a7f136031a5d90001271635",
+      "message": "Hello",
+    },
+  ],
+  "type": "UPDATE_TODOS",
+}
+`;

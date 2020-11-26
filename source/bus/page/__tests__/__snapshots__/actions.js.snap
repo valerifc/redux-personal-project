@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`page actions: startFetching 1`] = `
+Object {
+  "payload": Object {
+    "allCompleted": true,
+    "newTodoText": "TEST_TEXT",
+    "page": 2,
+    "search": "test_search",
+    "size": 10,
+    "total": 17,
+  },
+  "type": "SET_PAGE",
+}
+`;
